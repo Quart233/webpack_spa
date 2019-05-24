@@ -7,7 +7,8 @@ module.exports = smart(base, {
     mode: 'development',
     devServer: {
         port: 8080,
-		progress: true
+        progress: true,
+        contentBase: path.join(__dirname, '../src')
     },
     plugins: [
         new HtmlWebpackPlugin({
