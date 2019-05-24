@@ -13,7 +13,8 @@ module.exports = smart(base, {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(__dirname, '../src/main.html'),
-            filename: 'bundle' + '.html', // 输出的hmtl路径
+            // 输出的hmtl路径
+            filename: 'bundle' + '.html',
             chunks: ['index']
             // hash: true
         })
